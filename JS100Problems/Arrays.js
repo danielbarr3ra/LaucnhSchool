@@ -84,9 +84,9 @@ with objects it checks the location
   without using the built-in method Array.prototype.
   includes()
 */
-let destinations = ['Prague', 'London', 'Sydney', 'Belfast', 'Rome',
+let destinations = ['Prague', 'London', 'Prague ','Sydney', 'Belfast', 'Rome',
   'Aruba', 'Paris', 'Bora Bora', 'Barcelona', 'Rio de Janeiro',
-  'Marrakesh', 'New York City'];
+  'Marrakesh', 'New York City', 'Barcelona'];
 
 function contains(str,arr) {
   return (arr.reduce((acc,curr)=>{
@@ -96,7 +96,9 @@ function contains(str,arr) {
     return acc
   },false))
 }
-console.log(contains('wat', destinations)); // true
+console.log('-----------9')
+console.log(contains('Prague',destinations)) //true
+console.log(contains('Barcelona', destinations)); // true
 console.log(contains('Nashville', destinations)); // false
 /**10
  join using -
